@@ -1,6 +1,5 @@
 import socket 
 Print ("Rasberry Pi is alive")
-
 name: VORTEX
 // MeArm 4-DOF
 #define minGrip 15 
