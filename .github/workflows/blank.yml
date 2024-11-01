@@ -1,0 +1,53 @@
+import socket 
+Print ("Rasberry Pi is alive")
+
+name: VORTEX
+// MeArm 4-DOF
+#define minGrip 15 
+#define minBase 0 
+#define minShou 60 
+#define minElbw 60 
+
+#define maxGrip 45 
+#define maxBase 170
+#define maxShou 180 
+#define maxElbw 150 
+
+#define midGrip 30
+#define midBase 87
+#define midShou 138
+#define midElbw 100
+
+/* SS 3-DOF
+#define minGrip 75 
+#define minBase 5 
+#define minShou 5 
+#define minElbw 0 
+
+#define maxGrip 125 
+#define maxBase 150
+#define maxShou 155 
+#define maxElbw 0 
+
+#define midGrip 100
+#define midBase 90
+#define midShou 90
+#define midElbw 0 
+*/
+int gripPosition[100];
+int basePosition[100];
+int shouPosition[100];
+int elbwPosition[100];
+void loop ()
+{
+  checkBTcmd ();
+  defineLocalRemote () ;
+  execTaskCmd = digitalRead (execTaskPin);
+  if (execTaskCmd == || HIGH command == "runon")
+  {
+    RunProgram () ;
+  }
+  else recArmPosition () ;
+  command = "";
+}
+
